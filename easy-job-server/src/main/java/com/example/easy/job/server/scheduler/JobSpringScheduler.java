@@ -1,5 +1,6 @@
 package com.example.easy.job.server.scheduler;
 
+import com.example.easy.job.server.entity.User;
 import lombok.Data;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.DisposableBean;
@@ -32,6 +33,12 @@ public class JobSpringScheduler implements ApplicationContextAware, Initializing
     @Override
     public void afterPropertiesSet() throws Exception {
         System.out.println("SpringBoot to start!!!");
+        User user = User.builder().username("liming.li").build();
+        user.setId(1L);
+        user.setDeleted(false);
+        user.setCreatedTime(System.currentTimeMillis());
+        user.setUpdatedTime(System.currentTimeMillis());
+        System.out.println("Get user info " + user);
     }
 
     @Override

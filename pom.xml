@@ -17,5 +17,13 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <spring.version>2.4.5</spring.version>
+        <lombok.version>1.18.16</lombok.version>
+        <javax.persistence.version>1.0.2</javax.persistence.version>
+        <easy.common.version>0.0.1-SNAPSHOT</easy.common.version>
+        <easy.server.version>0.0.1-SNAPSHOT</easy.server.version>
+        <easy.executor.version>0.0.1-SNAPSHOT</easy.executor.version>
+        <javax.validation.version>2.0.1.Final</javax.validation.version>
+        <hibernate.validator.version>7.0.1.Final</hibernate.validator.version>
     </properties>
 </project>
